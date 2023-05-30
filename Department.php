@@ -193,7 +193,7 @@
                                  
                                 $sql = "SELECT * FROM department";
 								$result = $db->execute_query($sql);
-                            
+                                 
 								foreach ($result as $value) {
 									echo "<tr>";
 									echo "<td>" . $value["name"] . "</td>";

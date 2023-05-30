@@ -40,6 +40,7 @@ if (!$result) {
 
 <head>
     <title>Manage Users</title>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
         .action-buttons {
@@ -58,6 +59,7 @@ if (!$result) {
     <center>
         <h1><b>Manage Users</b></h1>
     </center>
+    <a href="createEmployee.php" classa="btn btn-primary mb-3">Create Employee</a>
         <table class="table">
             <thead>
                 <tr>

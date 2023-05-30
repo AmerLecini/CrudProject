@@ -1,13 +1,18 @@
 <?php
+// session_start();
 include "db.php";
 $db = new DbConnection();
 
+// if (empty($_SESSION['id'])) {
+//     header("Location: Login.php");
+// }
 
-$parent_id = $_POST['parent_id'];
-$sql = "DELETE from departament where parent_id = '{$parent_id}'";
 
-$result = $db->execute_query($sql);
+        $id = $_GET['id'];
 
-if(!$result)
-    echo die('ERROR');
-    header('Location: departament.php');
+        $sql = "DELETE FROM department WHERE id = $id";
+        $db->execute_query($sql);
+
+        header('Location: Department.php');
+    
+
