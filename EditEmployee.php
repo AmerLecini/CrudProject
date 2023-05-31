@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         $surname = $_POST['surname'];
         $age = $_POST['age'];
         $gender = $_POST['gender'];
-
+        
         $sql_query = "UPDATE users SET username = '{$username}', passcode = '{$passcode}', name = '{$name}', 
                         surname = '{$surname}', age = '{$age}', gender = '{$gender}' WHERE user_id = '{$user_id}'";
       //   var_dump($sql_query);die();
@@ -119,7 +119,9 @@ $user = $result[0];
                   </div>
          
          <button type="submit" class="btn btn-primary" name="action" value="update">Save Changes</button>
-         <a href="EditEmployee.php" class="btn btn-secondary">Back</a>
+				
+					<a href="Home.php" class="btn btn-secondary">Back</a>
+			
       </form>
    </div>
 </body>

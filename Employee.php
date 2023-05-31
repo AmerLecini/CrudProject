@@ -21,9 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         $sql_query = "DELETE FROM users WHERE user_id = '{$user_id}'";
         $result = $db->execute_query($sql_query);
 
-        if (!$result) {
-            die('Error deleting user');
-        }
     }
 }
 
@@ -59,7 +56,7 @@ if (!$result) {
     <center>
         <h1><b>Manage Users</b></h1>
     </center>
-    <a href="createEmployee.php" classa="btn btn-primary mb-3">Create Employee</a>
+    <a href="CreateUser.php" classa="btn btn-primary mb-3">Create User</a>
         <table class="table">
             <thead>
                 <tr>

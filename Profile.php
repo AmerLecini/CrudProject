@@ -20,6 +20,7 @@ $passcode = $user_data[0]['username'];
 $name = $user_data[0]['name'];
 $surname  = $user_data[0]['surname'];
 $age = $user_data[0]['age'];
+$department_id = $user_data[0]['department_id'];
 $gender = $user_data[0]['gender'];
 
 //  var_dump($gender);
@@ -94,6 +95,10 @@ $gender = $user_data[0]['gender'];
                   <div class="form-group">
                      <label for="age">Age</label>
                      <input type="number" class="form-control" id="age" name="age" value="<?php echo "$age";?>" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="department_id">Department_id</label>
+                     <input type="number" class="form-control" id="department_id" name="department_id" value="<?php echo "$department_id";?>" required>
                   </div>
                   <div class="form-group">
                      <label for="gender">Gender</label>

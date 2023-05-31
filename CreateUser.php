@@ -70,12 +70,12 @@ VALUES ('" . $_POST['username'] . "','" . $_POST['passcode'] . "', now() ,'" . $
 . $_POST['surname'] . "','" . $_POST['age'] . "','" . $_POST['gender'] . "','" . $_POST['department_id'] . "','" 
 . $_POST['is_admin'] . "');";
 
-var_dump($sql_query);
+// var_dump($sql_query);
 $result = $db->execute_query($sql_query);
-if(!$result ){
-    die("Error");
+// if(!$result ){
+//     die("Error");
 }
-header('Location:Login.php');
-}
+// header('Location:Login.php');
+// }
 ?>
 
