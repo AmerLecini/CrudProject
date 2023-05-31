@@ -55,8 +55,10 @@ if (!$result) {
     <div class="container">
     <center>
         <h1><b>Manage Users</b></h1>
-    </center>
-    <a href="CreateUser.php" classa="btn btn-primary mb-3">Create User</a>
+    </center><br><div style="display: flex; justify-content: center;">
+  <a href="CreateUser.php" class="btn btn-primary mb-3" style="background: linear-gradient(to right, #FF4E50, #F9D423);"><b>Create User<b></a>
+</div>
+
         <table class="table">
             <thead>
                 <tr>

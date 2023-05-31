@@ -119,8 +119,7 @@ $user = $result[0];
                   </div>
          
          <button type="submit" class="btn btn-primary" name="action" value="update">Save Changes</button>
-				
-					<a href="Home.php" class="btn btn-secondary">Back</a>
+			<a href="Home.php" class="btn btn-secondary">Back</a>
 			
       </form>
    </div>
