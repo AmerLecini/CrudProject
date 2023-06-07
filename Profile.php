@@ -8,15 +8,13 @@ if (empty($_SESSION['id'])) {
 }
 
 $db = new DbConnection();
-
 $user_id = $_SESSION['id'];
 
-$sql = "SELECT * FROM users" ;
-
+$sql = "SELECT * FROM users where user_id = $user_id" ;
 $user_data =$db->execute_query($sql);
 
 $username = $user_data[0]['username'];
-$passcode = $user_data[0]['username'];
+$passcode = $user_data[0]['passcode'];
 $name = $user_data[0]['name'];
 $surname  = $user_data[0]['surname'];
 $age = $user_data[0]['age'];
